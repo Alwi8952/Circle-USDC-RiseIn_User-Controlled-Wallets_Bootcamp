@@ -1,0 +1,82 @@
+POST https://api.circle.com/v1/w3s/user/initialize: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.10.236",
+        "family": "IPv4",
+        "port": 64291
+      },
+      "remote": {
+        "address": "104.16.31.32",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": true,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "US",
+          "stateOrProvince": "Massachusetts",
+          "locality": "Boston",
+          "organization": "Circle Internet Financial, LLC",
+          "commonName": "circle.com",
+          "alternativeNames": "DNS:circle.com, DNS:www.circle.com, DNS:api.circle.com, DNS:pay.circle.com, DNS:invest.circle.com, DNS:usdc.circle.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert EV RSA CA G2"
+        },
+        "validFrom": "Oct 17 00:00:00 2023 GMT",
+        "validTo": "Oct 23 23:59:59 2024 GMT",
+        "fingerprint": "A9:C0:11:E2:24:D2:67:EB:76:5C:49:AA:A7:76:D4:12:99:D0:5C:23",
+        "serialNumber": "07fc96dca8cbd7e8747d59b16be5fd7c"
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "authorization": "Bearer  TEST_API_KEY:9fc97aa7e96a13fadb3a399127396cbb:506da73b4f2cc84fa568cdc08e3173c2",
+    "x-user-token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoTW9kZSI6IlBJTiIsImRldmVsb3BlckVudGl0eUVudmlyb25tZW50IjoiVEVTVCIsImVudGl0eUlkIjoiYTk1N2YxMzktMmVhMy00NDZlLWFhNGUtMzFlMTVmMzllZGZhIiwiZXhwIjoxNzE4NjE5NTY2LCJpYXQiOjE3MTg2MTU5NjYsImludGVybmFsVXNlcklkIjoiMWZjN2MzNzctNjg4Yy01OWVlLTgwYjEtMzUwMGRiOGZmZWJlIiwiaXNzIjoiaHR0cHM6Ly9wcm9ncmFtbWFibGUtd2FsbGV0LmNpcmNsZS5jb20iLCJqdGkiOiJiMmZjYmQ1MC0xY2FlLTQ2MDMtOWM1My1hMDZmM2Q2ZWMxMWMiLCJzdWIiOiI3NTg3OWFjYS1hZDc1LTQ1NmYtODBiNC0zNDQ4MGUxMDhiYTgifQ.ZUn4U9-ZpF6RH8hUjn0_CVjxxEOxqXGo6Q-oc6M-6f_5nlkHeqAlrCvFibO-Aatf5jKcYNWoItuRCXwyCzhLSR1HfJuPIkxWwTCDwOa0syjuV4Jh1UvZtbINMfPqlwRbD2ENaA2GmdLc1FhoR0hCtuUO7Bu1TvgObh_SR-yfwXXPyjHmcDp2my5RUXzvWYvbyZ9Kk_e8lkLUhyj9BGDixUmHulrjzInIdepvqFpwxwskpkhuJwlAkpjD1dyGG7wK9wXIL2v50jIP135iaJ9lujBDOJoXgSvJR-gBPH8m_fK4GrCMnaOt54KN6xWTXgA2-a5Ivj5jb-Gs5r9RnZB1bg",
+    "user-agent": "PostmanRuntime/7.39.0",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "f9b4c9ff-2129-40c5-9dea-e10888b2f3ad",
+    "host": "api.circle.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "98"
+  },
+  "Request Body": "{\r\n  \"idempotencyKey\": \"a509e817-4d32-497e-8623-2d511764b4fc\",\r\n  \"blockchains\": [\"MATIC-AMOY\"]\r\n}",
+  "Response Headers": {
+    "date": "Mon, 17 Jun 2024 09:28:25 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "x-content-type-options": "nosniff",
+    "x-dns-prefetch-control": "off",
+    "x-download-options": "noopen",
+    "x-frame-options": "DENY",
+    "x-request-id": [
+      "03465c34ca5f1c7dcc844bca49678151",
+      "03465c34ca5f1c7dcc844bca49678151"
+    ],
+    "x-xss-protection": "1; mode=block",
+    "cf-cache-status": "DYNAMIC",
+    "server": "cloudflare",
+    "cf-ray": "895202640f07b59f-CGK",
+    "content-encoding": "gzip"
+  },
+  "Response Body": "{\"data\":{\"challengeId\":\"e324dd74-2ac2-5289-84d2-28454d30e5a4\"}}"
+}

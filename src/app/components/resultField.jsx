@@ -9,6 +9,9 @@ const ResultField = ({ text, flag }) => {
   };
 
   const trimText = (token) => {
+    if (!token) {
+      return ""; // atau return nilai default yang diinginkan
+    }
     return token.slice(0, 5) + "..." + token.slice(-5);
   };
 

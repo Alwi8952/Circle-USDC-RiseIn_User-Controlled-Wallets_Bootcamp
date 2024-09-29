@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const acquire_session_token = async () => {
+  
   const options = {
     method: "POST",
     url: "https://api.circle.com/v1/w3s/users/token",
@@ -24,4 +25,5 @@ export const acquire_session_token = async () => {
     .catch(function (error) {
       console.error(error);
     });
+
 };
